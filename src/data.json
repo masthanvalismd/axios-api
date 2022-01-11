@@ -1,0 +1,32 @@
+[
+  {
+   "name": "MS Dhoni",
+   "role": "Wicketkeeper batsman/Captain",
+   "batstyle": "Right-handed",
+   "about": "A legend of world cricket, MS Dhoni is the only international captain to win all three ICC global trophies – the World T20 in 2007, the Cricket World Cup (50-over) in 2011 and the Champions Trophy in 2013. His record as all-time skipper of the Chennai Super Kings in IPL is equally stunning – four crowns, nine finals, playoffs in every season except one. All this, apart from leading the team to two Champions League T20 trophies in 2010 and 2014. The wicketkeeper-batsman had a stellar international career from 2004 to 2019, where he amassed more than 17000 runs across three formats. It included 10773 runs in ODIs, where he averaged in excess of 50. The Super Kings captain has played 220 IPL matches, scoring 4746 runs including 23 half-centuries. ",
+   "image": "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/1.png",
+   "born": " 07 July 1981",
+   "matches": 220,
+   "runs": 4746,
+   "wickets": 0,
+   "bowlingstyle": "Right-arm Medium",
+   "hs": 84,
+    "hw": 0,
+   "id": "1"
+  },
+  {
+   "name": "Suresh Raina",
+   "role": "Batsman",
+   "batstyle": "Left-handed",
+   "about": "Suresh Raina is popularly referred to as Mr IPL for his consistency with the bat since the inaugural season. The southpaw is the first to achieve the 5,000-run mark in the competition. Not to forget his livewire presence on the field or his contribution as MS Dhoni’s deputy.",
+   "image": "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/ipl/284/14.png",
+   "born": " 27 November 1986",
+   "matches": 205,
+   "runs": 5528,
+   "wickets": 25,
+   "bowlingstyle": "Right-arm Off-spin",
+   "hs": 100,
+    "hw": 2,
+   "id": "2"
+  }
+ ]

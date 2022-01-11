@@ -1,38 +1,125 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: rgb(87, 69, 252);
+  background: linear-gradient(
+    90deg,
+    rgba(87, 69, 252, 1) 0%,
+    rgba(29, 117, 253, 1) 50%,
+    rgba(71, 69, 252, 1) 100%
+  );
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home {
+  padding-top: 3rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.notFound {
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 3rem;
+}
+.notFound > h2 {
+  margin: 0;
+}
+.notFoundImg {
+  width: 80%;
+  max-width: 40rem;
+}
+.squad-list {
+  padding-top: 9rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+.squad-container {
+  border-radius: 10px;
+  width: 18rem;
+  background-image: url("https://www.chennaisuperkings.com/CSK_WEB/images1/teamplayerbg.png");
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 0px 24px 1px rgba(71, 71, 71, 0.75);
+  -webkit-box-shadow: 0px 0px 24px 1px rgba(76, 75, 75, 0.75);
+  -moz-box-shadow: 0px 0px 24px 1px rgba(133, 131, 131, 0.75);
+}
+.squad-container:hover {
+  cursor: pointer;
+}
+.pic {
+  padding-top: 3px;
+  width: 12rem;
+  height: 11rem;
+  object-fit: cover;
+}
+.role {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card-container {
+  padding-top: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-image {
+  background-image: url("https://www.chennaisuperkings.com/CSK_WEB/images1/teamplayerbg.png");
+  object-fit: contain;
+  display: flex;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card-title {
+  padding-top: 3rem;
+  color: #1d75fd;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.card-header {
+  display: grid;
+}
+.table-data {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.p-text {
+  text-align: center;
+  color: #1d75fd;
+  font-size: 1.3rem;
 }
 
-.App-link {
-  color: #61dafb;
+span {
+  margin-right: 1.5rem;
+  color: rgb(255, 196, 0);
+  font-weight: bold;
+  font-size: 1.1rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3 {
+  text-align: left;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.add-player {
+  padding-top: 5rem;
+}
+.btn-grp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }

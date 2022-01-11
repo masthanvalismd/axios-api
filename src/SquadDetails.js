@@ -6,7 +6,7 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import { CardActionArea, CardActions } from "@mui/material";
+import { CardActions } from "@mui/material";
 
 export function PlayerDetails() {
   const { id } = useParams();
@@ -31,9 +31,10 @@ export function PlayerDetails() {
         >
           Back to squad
         </Button>
-        <CardActionArea>
+   
           <div className="card-image">
             <img
+              className="card-image1"
               src={player.image}
               alt="player_pic"
               style={{ height: "10rem" }}
@@ -53,7 +54,7 @@ export function PlayerDetails() {
                 </CardActions>
                 <CardContent>
                   <h3>
-                    <span>Born</span>
+                    <span>Born    </span>
                     {player.born}
                   </h3>
                   <h3>
@@ -73,7 +74,7 @@ export function PlayerDetails() {
               <h3>{player.about}</h3>
             </div>
           </CardContent>
-        </CardActionArea>
+       
         <div className="table-data">
           <h2>Career Stats</h2>
           <table border="1">

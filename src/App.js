@@ -11,6 +11,12 @@ import { SquadList } from "./SquadList";
 import { PlayerDetails } from "./SquadDetails";
 import { AddPlayer } from "./AddPlayer";
 import { EditDetails } from "./EditDetails";
+import { useState } from "react";
+import Sound from "react-sound";
+import CSK from "./CSK.mp3";
+import IconButton from "@mui/material/IconButton";
+import PlayCircleIcon from "@mui/icons-material/PlayCircle";
+import StopCircleIcon from "@mui/icons-material/StopCircle";
 
 export default function App() {
   const navigate = useNavigate();
@@ -44,6 +50,7 @@ export default function App() {
             >
               Add Player
             </Button>
+            <PlaySound />
           </Toolbar>
         </AppBar>
       </div>
@@ -59,3 +66,28 @@ export default function App() {
     </div>
   );
 }
+
+const PlaySound = (
+  handleSongLoading,
+  handleSongPlaying,
+  handleSongFinishedPlaying
+) => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  return (
+    <div>
+      <IconButton
+        color="warning"
+        title="Theme Song"
+        onClick={() => setIsPlaying(!isPlaying)}>
+        {!isPlaying ? <PlayCircleIcon /> : <StopCircleIcon />}
+      </IconButton>
+      <Sound
+        url={CSK}
+        playStatus={isPlaying ? Sound.status.PLAYING : Sound.status.STOPPED}
+        onLoading={handleSongLoading}
+        onPlaying={handleSongPlaying}
+        onFinishedPlaying={handleSongFinishedPlaying}
+      />
+    </div>
+  );
+};

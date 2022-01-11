@@ -8,7 +8,7 @@ export function Squad({ name, role, image, id, deleteButton, editButton }) {
     <div className="squad-container">
       <img className="pic" src={image} alt="img" />
       <div className="details">
-        <div className="header">
+        <div className="header1">
           <h2>{name}</h2>
           <IconButton
             onClick={() => navigate(`/squad/${id}`)}
